@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url(fonts/ptsans-400.woff2) format(woff2);
+  src: url(../fonts/ptsans-400.woff2) format(woff2);
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url(fonts/ptsans-700.woff2) format(woff2);
+  src: url(../fonts/ptsans-700.woff2) format(woff2);
   font-display: swap;
 }
 
@@ -64,7 +64,7 @@ body {
 }
 
 .main-index {
-  background-image: url(images/main/index-background.jpg);
+  background-image: url(../images/main/index-background.jpg);
   color: #000000;
   background-color: #ffffff;
   background-size: 100% auto;
@@ -196,7 +196,7 @@ body {
 }
 
 .subscribe {
-  background-image: url(images/main/background-subscribe.jpg);
+  background-image: url(../images/main/background-subscribe.jpg);
   color: #000000;
   background-color: #ffffff;
   background-size: 100% auto;
@@ -228,7 +228,7 @@ body {
 }
 
 .inner-header {
-  background-image: url(images/catalog/background-header.jpg);
+  background-image: url(../images/catalog/background-header.jpg);
   color: #000000;
   background-color: #ffffff;
   background-size: 100% auto;
