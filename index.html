@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
 <header class="page-header">
@@ -30,7 +31,7 @@
     <img src="images/main/like-1.svg" class="navigation-likes-count" width="20" height="20" alt="Количество лайков">
     </li>
     <li class="navigation-item">
-      <a class="button-here" href="#">Хочу сюда</a>
+      <button class="button-here" type="submit" href="#">Хочу сюда</button>
     </li>
   </ul>
 </nav>
@@ -66,7 +67,7 @@
       <p class="visually-hidden">Прочерк</p>
       <p class="advantages-benefit-description">Все достопримечательности находятся очень близко</p>
     </li>
-    <li class="advantages-benefit-item">
+    <li class="advantages-benefit-item-another">
       <h3 class="advantages-benefit-title">Красивая дорога</h3>
       <p class="visually-hidden">Прочерк</p>
       <p class="advantages-benefit-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
@@ -96,7 +97,7 @@
       <h3 class="advantages-privilege-title">Жилье</h3>
       <p class="advantages-privilege-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
     </li>
-    <li class="advantages-privilege-item">
+    <li class="advantages-privilege-item-another">
       <img src="images/main/food.svg" class="food-img" alt="Еда">
       <p class="visually-hidden">Еда</p>
       <h3 class="advantages-privilege-title">Еда</h3>
@@ -113,11 +114,11 @@
 <section class="booking">
   <h3 class="interested">Заинтересовались?</h3>
   <p class="interested-booking">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-  <a class="button" href="#">Поиск гостиницы в Седоне</a>
+  <a class="button-search-hotel" href="#">Поиск гостиницы в Седоне</a>
 </section>
 <section class="subscribe">
-  <h3 class="subscribe-mailing">Подпишитесь на рассылку</h3>
-  <p class="subscribe-information">Только полезная информация и никакого спама, честное бойскаутское!</p>
+  <h3 class="subscribe-mailing-main">Подпишитесь на рассылку</h3>
+  <p class="subscribe-information-main">Только полезная информация и никакого спама, честное бойскаутское!</p>
   <img src="images/main/background-subscribe.jpg" class="background-subscribe" width="1200" height="414" alt="Вид на каньон">
   <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
     <input class="field" placeholder="Ваш e-mail" type="email" required>
