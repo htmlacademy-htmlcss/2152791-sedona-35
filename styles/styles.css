@@ -52,6 +52,11 @@ body {
   margin-left: auto;
 }
 
+.logoSedona {
+  width: 140px;
+  margin-right: 44px;
+}
+
 .page-container{
   width: 1200px;
   margin: 0 auto;
@@ -367,7 +372,6 @@ width: 400px;
   line-height: 70px;
   font-weight: 700;
   color: #ffffff;
-  background-color: #000000;
   text-align: left;
 }
 
@@ -376,8 +380,19 @@ width: 400px;
   line-height: 21px;
   font-weight: 400;
   color: #ffffff;
-  background-color: #000000;
   text-align: left;
+}
+
+.catalog-hotels-upper {
+  display: flex;
+
+}
+
+.catalog-filter {
+  display: flex;
+  flex-direction: row;
+  width: 150px;
+  margin-right: 70px;
 }
 
 .catalog-filter-group {
@@ -411,6 +426,21 @@ width: 400px;
   line-height: 20px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.display-order {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-hotels-lower {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0%;
 }
 
 .search-hotels {
@@ -492,12 +522,28 @@ width: 400px;
   background-color: #F2F2F2;
 }
 
+.pagination {
+  margin: 0;
+  padding: 0;
+}
+
+.pagination-list {
+  display: flex;
+  justify-content: left;
+  flex-direction: row;
+}
+
+.pagination-item {
+  margin: 8px;
+}
+
 .subscribe-mailing-catalog {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
-  text-align: left;
+  text-align: center;
+
 }
 
 .subscribe-information-catalog {
