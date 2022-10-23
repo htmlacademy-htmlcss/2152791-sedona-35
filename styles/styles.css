@@ -14,6 +14,10 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -21,6 +25,67 @@ body {
   text-align: center;
   background-color: #ffffff;
   color: #000000;
+  margin: 0;
+  display: flex
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  width: 450px;
+}
+
+.navigation-user {
+  max-width: 450px;
+  margin-left: auto;
+}
+
+.page-container{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  margin: 0;
+  padding: 0;
+}
+
+.sedona-img {
+  display: block;
+  margin: 0 auto;
+}
+
+.welcome-img {
+  display: block;
+  margin: 0 auto;
+}
+
+.gorgeous-img {
+  display: block;
+  margin: 0 auto;
+}
+
+.description {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .page-header {
@@ -71,6 +136,10 @@ body {
   background-repeat: no-repeat;
 }
 
+.description {
+  background-color: #ffffff;
+}
+
 .description-title {
   font-size: 30px;
   line-height: 36px;
@@ -83,13 +152,20 @@ body {
   line-height: 26px;
   font-weight: 400;
   color: #333333;
-  background-color: #ffffff;
 }
 
 .advantages-city {
   text-align: center;
   color: #ffffff;
   background-color: #82B3D3;
+}
+
+.advantages-city-list {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
 }
 
 .advantages-city-title {
@@ -109,6 +185,18 @@ body {
   text-align: center;
   color: #000000;
   background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-benefit-list {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages-benefit-item {
+width: 400px;
 }
 
 .advantages-benefit-title {
@@ -135,6 +223,14 @@ body {
   background-color: #82B3D3;
 }
 
+.advantages-devils-bridge-list {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
 .advantages-devils-bridge-title {
   font-size: 24px;
   line-height: 28px;
@@ -153,6 +249,18 @@ body {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
+.advantages-privilege-list {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages-privilege-item {
+  width: 400px;
+}
+
 .advantages-privilege-title {
   font-size: 24px;
   line-height: 28px;
@@ -169,6 +277,15 @@ body {
 
 .advantages-privilege-item-another {
   background-color: #ffffff;
+}
+
+.bookung {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  width: 1200px;
 }
 
 .interested {
@@ -225,6 +342,16 @@ body {
   font-weight: 700;
   color:#ffffff;
   background-color: #82B3D3;
+}
+
+.page-footer-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-social-list {
+  display: flex;
+  justify-content: space-between;
 }
 
 .inner-header {
