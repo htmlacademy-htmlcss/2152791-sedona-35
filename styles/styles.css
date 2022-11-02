@@ -49,7 +49,9 @@ body {
 .navigation {
   display: flex;
   width: 1200px;
+  height: 64px;
   margin: 0 auto;
+  border: #82B3D3 solid 1px;
 }
 
 .logo-Sedona {
@@ -80,7 +82,8 @@ body {
 
 .navigation-link {
   display: block;
-  padding: 32px 20px;
+  margin-top: 20px;
+  margin-left: 32px;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -89,14 +92,18 @@ body {
   text-decoration: none;
 }
 
+.navigation-link:first-child {
+  margin-left: 44px;
+}
+
 .navigation-link-here {
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
   color: #ffffff;
   background-color: #756157;
+  margin-top: 14px;
   margin-right: 70px;
-  max-height: 36px;
   padding: 8px 34px 8px 34px;
 }
 
@@ -108,6 +115,8 @@ body {
 .page-container{
   width: 1200px;
   margin: 0 auto;
+  padding: 0;
+  border: #82B3D3 solid 1px;
 }
 
 .welcome {
@@ -148,16 +157,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 282px;
 }
 
 .page-header {
   color: #000000;
   background-color: #ffffff;
-}
-
-.description {
-  background-color: #ffffff;
-  margin-bottom: ;
 }
 
 .description-title {
@@ -436,6 +441,7 @@ width: 400px;
 .page-footer-container {
   width: 1200px;
   margin: 0 auto;
+  border: #82B3D3 solid 1px;
 }
 
 .footer-social-list {
@@ -449,11 +455,12 @@ width: 400px;
 
 .number-icon {
   margin-left: 250px;
-  margin-bottom: 35px;
+  margin-top: 45px;
 }
 
 .HTML-Academy-logo-icon {
   margin-left: 235px;
+  margin-top: 48px;
 }
 
 .catalog-hotels-container {
@@ -574,6 +581,41 @@ width: 400px;
 
 }
 
+.hotel-list {
+  display: grid;
+  grid-template-columns: 340px 340px 340px;
+  gap: 20px;
+  list-style-type: none;
+}
+
+.hotel-card {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 0;
+  padding: 16px;
+  border: #82B3D3 solid 1px;
+}
+
+.hotel-card-description {
+  display: grid;
+  grid-template-columns: 160px 160px;
+}
+
+.stars {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.star-icon {
+  margin-left: 6px;
+  margin-top: 26px;
+}
+
+.hotel-card-image {
+  margin-bottom: 16px;
+}
+
 .hotel-card-link {
   font-size: 24px;
   line-height: 28px;
@@ -583,12 +625,17 @@ width: 400px;
   text-decoration: none;
 }
 
+.hotel-card-title {
+  margin-bottom: 16px;
+}
+
 .hotel-card-description {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
   text-align: left;
   color: #333333;
+  margin-bottom: 16px;
 }
 
 .hotel-card-price {
@@ -597,6 +644,7 @@ width: 400px;
   font-weight: 400;
   text-align: right;
   color: #333333;
+  margin-bottom: 16px;
 }
 
 .hotel-card-button-detail {
@@ -607,6 +655,7 @@ width: 400px;
   text-decoration: none;
   color: #ffffff;
   background-color: #756157;
+  padding: 8px;
 }
 
 .hotel-card-button-favourites {
@@ -617,6 +666,7 @@ width: 400px;
   text-decoration: none;
   color: #ffffff;
   background-color: #82B3D3;
+  padding: 8px;
 }
 
 .hotel-card-button-in-favourites {
@@ -627,6 +677,7 @@ width: 400px;
   text-decoration: none;
   color: #ffffff;
   background-color: #7DB54F;
+  padding: 8px;
 }
 
 .rating {
@@ -636,6 +687,8 @@ width: 400px;
   text-transform: uppercase;
   color: #333333;
   background-color: #F2F2F2;
+  margin-top: 16px;
+  padding: 8px;
 }
 
 .pagination {
