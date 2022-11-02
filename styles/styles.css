@@ -115,6 +115,7 @@ body {
 .page-container{
   width: 1200px;
   margin: 0 auto;
+  padding: 0;
   border: #82B3D3 solid 1px;
 }
 
@@ -440,6 +441,7 @@ width: 400px;
 .page-footer-container {
   width: 1200px;
   margin: 0 auto;
+  border: #82B3D3 solid 1px;
 }
 
 .footer-social-list {
@@ -453,11 +455,12 @@ width: 400px;
 
 .number-icon {
   margin-left: 250px;
-  margin-bottom: 35px;
+  margin-top: 45px;
 }
 
 .HTML-Academy-logo-icon {
   margin-left: 235px;
+  margin-top: 48px;
 }
 
 .catalog-hotels-container {
