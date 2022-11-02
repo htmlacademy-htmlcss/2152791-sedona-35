@@ -49,7 +49,9 @@ body {
 .navigation {
   display: flex;
   width: 1200px;
+  height: 64px;
   margin: 0 auto;
+  border: #82B3D3 solid 1px;
 }
 
 .logo-Sedona {
@@ -80,7 +82,8 @@ body {
 
 .navigation-link {
   display: block;
-  padding: 32px 20px;
+  margin-top: 20px;
+  margin-left: 32px;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -89,14 +92,18 @@ body {
   text-decoration: none;
 }
 
+.navigation-link:first-child {
+  margin-left: 44px;
+}
+
 .navigation-link-here {
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
   color: #ffffff;
   background-color: #756157;
+  margin-top: 14px;
   margin-right: 70px;
-  max-height: 36px;
   padding: 8px 34px 8px 34px;
 }
 
@@ -108,6 +115,7 @@ body {
 .page-container{
   width: 1200px;
   margin: 0 auto;
+  border: #82B3D3 solid 1px;
 }
 
 .welcome {
@@ -148,16 +156,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 282px;
 }
 
 .page-header {
   color: #000000;
   background-color: #ffffff;
-}
-
-.description {
-  background-color: #ffffff;
-  margin-bottom: ;
 }
 
 .description-title {
