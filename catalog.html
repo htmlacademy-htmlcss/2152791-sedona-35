@@ -8,30 +8,30 @@
   <body>
     <header class="page-header">
       <nav class="navigation">
-        <img src="images/main/logo-header.svg" class="logoSedona" width="140" height="70" alt="Логотип Седоны">
-        <ul class="navigation-list">
-         <li class="navigation-item">
-          <a class="navigation-link" href="index.html">Главная</a>
-         </li>
-         <li class="navigation-item">
-          <a class="navigation-link" href="#">О Седоне</a>
-         </li>
-         <li class="navigation-item">
-          <a class="navigation-link" href="catalog.html">Гостиницы</a>
-         </li>
-        </ul>
-        <ul class="navigation-list navigation-user">
+      <img src="images/main/logo-header.svg" class="logo-Sedona" width="140" height="70" alt="Логотип Седоны">
+      <ul class="navigation-list">
+       <li class="navigation-item">
+        <a class="navigation-link" href="index.html">Главная</a>
+       </li>
+       <li class="navigation-item">
+        <a class="navigation-link" href="#">О Седоне</a>
+       </li>
+       <li class="navigation-item">
+        <a class="navigation-link" href="#">Гостиницы</a>
+       </li>
+      </ul>
+      <ul class="navigation-list navigation-user">
+        <li class="navigation-item">
+        <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span></a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#"><span class="visually-hidden">Лайки</span></a>
+        </li>
           <li class="navigation-item">
-          <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span></a>
+            <button class="navigation-link-here" type="submit">Хочу сюда!</button>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#"><span class="visually-hidden">Лайки</span></a>
-          </li>
-            <li class="navigation-item">
-              <button class="navigation-link navigation-link-here" type="submit">Хочу сюда</button>
-            </li>
-        </ul>
-        </nav>
+      </ul>
+      </nav>
       </header>
     <main class="main-container main-inner">
     <div class="page-container">
@@ -87,26 +87,24 @@
               </li>
             </ul>
           </fieldset>
+          <div class="buttons-container">
+          <button class="button-apply" type="submit">Применить</button>
+          <button class="button-reset" type="reset">Сбросить</button>
+          </div>
         </form>
       </section>
     </section>
       <section class="display-order">
-        <h2 class="search-hotels">Найдено гостиниц: 38</h2>
         <div class="sorting-container">
+        <h2 class="search-hotels">Найдено гостиниц: 38</h2>
         <select class="select-control" aria-label="Сортировка">
           <option value="popular">Сначала популярное</option>
           <option value="cheap">Сначала дешевое</option>
           <option value="expensive">Сначала дорогое</option>
         </select>
-        <a class="catalog-view-button" href="#">
-          <img src="images/catalog/cards.svg" class="cards-icon" width="16" height="14" alt="Показать карточки">
-        </a>
-        <a class="catalog-view-button" href="#">
-          <img src="images/catalog/cards-list.svg" class="cards-list-icon" width="16" height="14" alt="Показать карточки и список">
-        </a>
-        <a class="catalog-view-button" href="#">
-          <img src="images/catalog/list.svg" class="list-icon" width="16" height="14" alt="Показать список">
-        </a>
+        <button class="cards" type="submit"></button>
+        <button class="cards-list" type="submit"></button>
+        <button class="list" type="submit"></button>
         </div>
       </section>
       <section class="catalog-hotels-lower">
