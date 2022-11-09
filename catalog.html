@@ -8,30 +8,44 @@
   <body>
     <header class="page-header">
       <nav class="navigation">
-        <img src="images/main/logo-header.svg" class="logoSedona" width="140" height="70" alt="Логотип Седоны">
-        <ul class="navigation-list">
-         <li class="navigation-item">
-          <a class="navigation-link" href="index.html">Главная</a>
-         </li>
-         <li class="navigation-item">
-          <a class="navigation-link" href="#">О Седоне</a>
-         </li>
-         <li class="navigation-item">
-          <a class="navigation-link" href="catalog.html">Гостиницы</a>
-         </li>
-        </ul>
-        <ul class="navigation-list navigation-user">
+      <img src="images/main/logo-header.svg" class="logo-Sedona" width="140" height="70" alt="Логотип Седоны">
+      <ul class="navigation-list">
+       <li class="navigation-item">
+        <a class="navigation-link" href="index.html">Главная</a>
+       </li>
+       <li class="navigation-item">
+        <a class="navigation-link" href="#">О Седоне</a>
+       </li>
+       <li class="navigation-item">
+        <a class="navigation-link navigation-link-current-hotels" href="#">Гостиницы</a>
+       </li>
+      </ul>
+      <ul class="navigation-list navigation-user">
+        <li class="navigation-item">
+        <a class="navigation-link" href="#">
+          <svg class="navigation-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="m18.5 17-3.7-3.67c1-1.3 1.7-2.98 1.7-4.87A8 8 0 0 0 8.5.5C4.1.5.5 4.18.5 8.56a8 8 0 0 0 12.9 6.26l3.7 3.68 1.4-1.5Zm-10-2.48a6 6 0 0 1-6-5.96 6 6 0 0 1 12 0 6 6 0 0 1-6 5.96Z" fill="#000"/>
+          </svg>
+          <span class="visually-hidden">Поиск</span>
+        </a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">
+            <svg class="navigation-icon" aria-hidden="true" focusable="false" width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.9 17a.9.9 0 0 1-.8-.4c-5.4-6.1-6.7-7.5-7-7.9A5.4 5.4 0 0 1 5.5 0C6.8 0 8 .5 9 1.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" fill="#000"/>
+            </svg>
+            <svg class="navigation-icon-12" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="20" height="20" rx="10" fill="#7DB54F"/>
+              <path d="M5.13 13.26h1.4V8.42l.1-.59-.4.47-1.1.79-.38-.51 2.2-1.7h.36v6.38h1.37V14H5.13v-.74Zm8.83-4.67c0 .35-.07.72-.2 1.09a10.88 10.88 0 0 1-1.21 2.21c-.26.35-.52.69-.78 1.01l-.49.43v.04l.64-.11h2.18V14h-3.98v-.29a33.15 33.15 0 0 0 1.17-1.32 15.09 15.09 0 0 0 1.25-1.83c.18-.32.32-.64.43-.95.1-.31.16-.61.16-.89 0-.33-.1-.6-.28-.81-.19-.22-.47-.33-.85-.33-.25 0-.5.05-.74.16-.24.1-.45.22-.62.35l-.33-.57c.23-.2.51-.36.83-.47.32-.11.66-.17 1.03-.17.29 0 .54.04.76.13a1.5 1.5 0 0 1 .91.9c.08.2.12.43.12.68Z" fill="#fff"/>
+            </svg>
+            <span class="visually-hidden">Лайки</span>
+          </a>
+        </li>
           <li class="navigation-item">
-          <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span></a>
+            <button class="navigation-link-here" type="submit">Хочу сюда!</button>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#"><span class="visually-hidden">Лайки</span></a>
-          </li>
-            <li class="navigation-item">
-              <button class="navigation-link navigation-link-here" type="submit">Хочу сюда</button>
-            </li>
-        </ul>
-        </nav>
+      </ul>
+      </nav>
       </header>
     <main class="main-container main-inner">
     <div class="page-container">
@@ -52,10 +66,10 @@
     </header>
       <section class="catalog-hotels-upper">
         <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
-        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Инфраструктура</legend>
+        <div class="form">
+          <div class="catalog-filter-group">
             <ul class="catalog-filter-list">
+             <li class="catalog-filter-title">Инфраструктура:</li>
              <li class="catalog-filter-item">
               <input class="control-input" type="checkbox" name="swimmig-pool" checked>
               Бассейн
@@ -69,10 +83,8 @@
               Wi-Fi
              </li>
             </ul>
-          </fieldset>
-          <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Тип Жилья</legend>
             <ul class="catalog-filter-list">
+              <li class="catalog-filter-title">Тип жилья:</li>
               <li class="catalog-filter-item">
                <input class="control-input" type="radio" name="accomodation" value="hotel">
                Гостиница
@@ -86,28 +98,38 @@
                Апартаменты
               </li>
             </ul>
-          </fieldset>
-        </form>
+          </div>
+          <div class="buttons-container">
+          <button class="button-apply" type="submit">Применить</button>
+          <button class="button-reset" type="reset">Сбросить</button>
+          </div>
+        </div>
       </section>
     </section>
       <section class="display-order">
         <h2 class="search-hotels">Найдено гостиниц: 38</h2>
-        <div class="sorting-container">
         <select class="select-control" aria-label="Сортировка">
           <option value="popular">Сначала популярное</option>
           <option value="cheap">Сначала дешевое</option>
           <option value="expensive">Сначала дорогое</option>
         </select>
-        <a class="catalog-view-button" href="#">
-          <img src="images/catalog/cards.svg" class="cards-icon" width="16" height="14" alt="Показать карточки">
-        </a>
-        <a class="catalog-view-button" href="#">
-          <img src="images/catalog/cards-list.svg" class="cards-list-icon" width="16" height="14" alt="Показать карточки и список">
-        </a>
-        <a class="catalog-view-button" href="#">
-          <img src="images/catalog/list.svg" class="list-icon" width="16" height="14" alt="Показать список">
-        </a>
-        </div>
+        <button class="cards" type="submit">
+          <svg class="cards-icon" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#a)" fill="#000"><path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"/>
+            </g><defs><clipPath id="a"><path fill="#fff" d="M0 0h16v14H0z"/>
+            </clipPath>
+          </defs>
+        </svg>
+        </button>
+        <button class="cards-list" type="submit">
+          <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" fill="#000"/>
+          </svg>
+        </button>
+        <button class="list" type="submit">
+          <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" fill="#000"><path d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z"/>
+          </g><defs><clipPath id="a"><path fill="#fff" d="M0 0h16v14H0z"/></clipPath></defs></svg>
+        </button>
       </section>
       <section class="catalog-hotels-lower">
         <ul class="hotel-list">
@@ -116,106 +138,116 @@
             <img class="hotel-card-image" src="images/catalog/amara-resort.jpg" width="300" height="212" alt="Amara Resort & Spa">
             <h3 class="hotel-card-title">Amara Resort & Spa</h3>
           </a>
-          <div class="hotel-card-description">
+          <div class="hotel-card-main">
             <p class="hotel-card-description">Гостиница</p>
             <p class="hotel-card-price">От 4000 ₽</p>
-            <a class="hotel-card-button-detail button" href="#">Подробнее</a>
-            <a class="hotel-card-button-favourites button" href="#">В избранное</a>
-            <div class="stars">
+          </div>
+          <div class="hotel-card-button">
+          <a class="hotel-card-button-detail button" href="#">Подробнее</a>
+          <a class="hotel-card-button-favourites button" href="#">В избранное</a>
+          </div>
+          <div class="stars">
             <img src="images/catalog/star.svg" class="star-icon" width="18" height="17" alt="Звезда">
             <img src="images/catalog/star.svg" class="star-icon" width="18" height="17" alt="Звезда">
             <img src="images/catalog/star.svg" class="star-icon" width="18" height="17" alt="Звезда">
             <img src="images/catalog/star.svg" class="star-icon" width="18" height="17" alt="Звезда">
-            </div>
-            <p class="rating">Рейтинг: 8,5</p>
+            <p class="rating-85">Рейтинг: 8,5</p>
           </div>
           </li>
           <li class="hotel-card">
-            <a class="hotel-card-link" href="#">
-              <img class="hotel-card-image" src="images/catalog/villas.jpg" width="300" height="212" alt="Villas at Poco Diablo">
+          <div class="hotel-card-main">
+          <a class="hotel-card-link" href="#">
+              <img class="hotel-card-image" src="images/catalog/villas.jpg" alt="Villas at Poco Diablo">
               <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
-            </a>
-            <div class="hotel-card-description">
-              <p class="hotel-card-description">Гостиница</p>
+          </a>
+          </div>
+          <div class="hotel-card-main">
+              <p class="hotel-card-name">Гостиница</p>
               <p class="hotel-card-price">От 5000 ₽</p>
+          </div>
+          <div class="hotel-card-button">
               <a class="hotel-card-button-detail button" href="#">Подробнее</a>
               <a class="hotel-card-button-in-favourites button" href="#">В избранном</a>
-              <div class="stars">
+          </div>
+          <div class="stars">
               <img src="images/catalog/star.svg" class="star-icon" width="18" height="17" alt="Звезда">
               <img src="images/catalog/star.svg" class="star-icon" width="18" height="17" alt="Звезда">
               <img src="images/catalog/star.svg" class="star-icon" width="18" height="17" alt="Звезда">
               <img src="images/catalog/star.svg" class="star-icon" width="18" height="17" alt="Звезда">
-              </div>
-              <p class="rating">Рейтинг: 9,2</p>
-            </div>
-            </li>
-            <li class="hotel-card">
-              <a class="hotel-card-link" href="#">
+              <p class="rating-92">Рейтинг: 9,2</p>
+          </div>
+          </li>
+          <li class="hotel-card">
+          <a class="hotel-card-link" href="#">
                 <img class="hotel-card-image" src="images/catalog/desert-quail.jpg" width="300" height="212" alt="Desert Quail Inn">
                 <h3 class="hotel-card-title">Desert Quail Inn</h3>
-              </a>
-              <div class="hotel-card-description">
+          </a>
+          <div class="hotel-card-main">
                 <p class="hotel-card-description">Гостиница</p>
                 <p class="hotel-card-price">От 2500 ₽</p>
+          </div>
+          <div class="hotel-card-button">
                 <a class="hotel-card-button-detail button" href="#">Подробнее</a>
                 <a class="hotel-card-button-favourites button" href="#">В избранное</a>
-                <div class="stars">
+          </div>
+          <div class="stars">
                 <img src="images/catalog/star.svg" class="star-icon" width="18" height="17" alt="Звезда">
                 <img src="images/catalog/star.svg" class="star-icon" width="18" height="17" alt="Звезда">
                 <img src="images/catalog/star.svg" class="star-icon" width="18" height="17" alt="Звезда">
-                </div>
-                <p class="rating">Рейтинг: 6,9</p>
-              </div>
-              </li>
-              <li class="hotel-card">
+                <p class="rating-69">Рейтинг: 6,9</p>
+          </div>
+          </li>
+          <li class="hotel-card">
                 <a class="hotel-card-link" href="#">
                   <img class="hotel-card-image" src="images/catalog/green-tree.jpg" width="300" height="212" alt="GreenTree Inn">
                   <h3 class="hotel-card-title">GreenTree Inn</h3>
                 </a>
-                <div class="hotel-card-description">
+          <div class="hotel-card-main">
                   <p class="hotel-card-description">Гостиница</p>
                   <p class="hotel-card-price">От 1500 ₽</p>
+          </div>
+          <div class="hotel-card-button">
                   <a class="hotel-card-button-detail button" href="#">Подробнее</a>
                   <a class="hotel-card-button-favourites button" href="#">В избранное</a>
-                  <div class="stars">
+          </div>
+          <div class="stars">
                   <img src="images/catalog/star.svg" class="star-icon" width="18" height="17" alt="Звезда">
                   <img src="images/catalog/star.svg" class="star-icon" width="18" height="17" alt="Звезда">
-                  </div>
-                  <p class="rating">Рейтинг: 5,0</p>
-                </div>
-                </li>
-        </ul>
+                  <p class="rating-50">Рейтинг: 5,0</p>
+          </div>
+          </li>
+       </ul>
       </section>
     <section class="pagination">
       <ul class="pagination-list">
         <li class="pagination-item">
-          <a class="pagination-link pagination-current">
-            <img src="images/catalog/pagination-1.svg" class="pagination-1" width="60" height="60" alt="Первая страница">
+          <a class="pagination-link-1">
+            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="60" height="60" rx="4" fill="#F2F2F2"/><path d="M25.8 34.2h2.8v-8l.3-1.3-1 1.2-1.8 1.2-1-1.5 4.5-3.7h1.5v12h2.7v2.3h-8v-2.2Z" fill="#000"/></svg>
           </a>
         </li>
         <li class="pagination-item">
           <a class="pagination-link" href="#">
-            <img src="images/catalog/pagination-2.svg" class="pagination-2" width="60" height="60" alt="Вторая страница">
+            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="60" height="60" rx="4" fill="#82B3D3"/><path d="M33.3 25.8a6 6 0 0 1-.4 2 17.9 17.9 0 0 1-3.5 5.7l-1.1.8v.1l1.4-.2h3.9v2.2h-8.4V35a59.2 59.2 0 0 0 3.4-4.1 18.1 18.1 0 0 0 1.8-3.2l.3-1.4c0-.6-.2-1-.5-1.4-.3-.3-.8-.5-1.5-.5-.4 0-.8 0-1.3.3-.4.1-.8.4-1.1.6l-1-1.8a6.4 6.4 0 0 1 4-1.4 5 5 0 0 1 1.6.2c.5.2 1 .4 1.3.7a4 4 0 0 1 1.1 2.8Z" fill="#fff"/></svg>
           </a>
         </li>
         <li class="pagination-item">
           <a class="pagination-link" href="#">
-            <img src="images/catalog/pagination-3.svg" class="pagination-3" width="60" height="60" alt="Третья страница">
+            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="60" height="60" rx="4" fill="#82B3D3"/><path d="M28.6 34.4c.8 0 1.5-.2 1.9-.6.4-.5.6-1 .6-1.6 0-.8-.2-1.3-.6-1.7-.5-.4-1.2-.5-2.2-.5H27v-1.4l2.4-3.3 1.1-1-1.5.3h-3.4v-2.2h7.6v1.4l-2.8 3.8-.9.5v.1l.9-.1c.4 0 .9.1 1.3.3.4.2.8.4 1.1.8.3.3.6.7.8 1.2l.2 1.6c0 .8 0 1.5-.4 2-.2.6-.6 1.1-1 1.5-.5.4-1 .7-1.6.9-.7.2-1.3.2-2 .2l-1.8-.1c-.7-.1-1.2-.3-1.6-.5L26 34a5.8 5.8 0 0 0 2.6.5Z" fill="#fff"/></svg>
           </a>
         </li>
         <li class="pagination-item">
           <a class="pagination-link" href="#">
-            <img src="images/catalog/pagination-4.svg" class="pagination-4" width="60" height="60" alt="Четвертая страница">
+            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="60" height="60" rx="4" fill="#82B3D3"/><path d="M34.8 32.5h-2.2v3.9h-2.4v-4h-6V31l6.3-8.7h2.1v8h2.2v2.2Zm-4.6-5.2.2-1.7-.8 1.5-2 2.7-1 .7 1.2-.1h2.4v-3Z" fill="#fff"/></svg>
           </a>
         </li>
         <li class="pagination-item">
           <a class="pagination-link" href="#">
-            <img src="images/catalog/pagination-...svg" class="pagination-..." width="20" height="5" alt="">
+            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.5 36.4c0-.4.1-.8.4-1 .2-.2.5-.3.9-.3s.7 0 1 .3c.2.2.3.6.3 1 0 .3-.1.6-.4.9-.2.2-.5.3-1 .3-.3 0-.6 0-.8-.3-.3-.3-.4-.6-.4-1Zm6.2 0c0-.4 0-.8.3-1 .2-.2.6-.3 1-.3.3 0 .6 0 .9.3.2.2.3.6.3 1 0 .3 0 .6-.3.9-.3.2-.6.3-1 .3-.3 0-.7 0-.9-.3-.2-.3-.3-.6-.3-1Zm6.1 0c0-.4.1-.8.4-1 .2-.2.5-.3.9-.3s.7 0 1 .3c.2.2.3.6.3 1 0 .3-.1.6-.4.9-.2.2-.5.3-1 .3-.3 0-.6 0-.8-.3-.3-.3-.4-.6-.4-1Z" fill="#000"/></svg>
           </a>
         </li>
         <li class="pagination-item">
           <a class="pagination-link" href="#">
-            <img src="images/catalog/pagination-10.svg" class="pagination-10" width="60" height="60" alt="Десятая страница">
+            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="60" height="60" rx="4" fill="#82B3D3"/><path d="M20.6 34.2h2.8v-8l.3-1.3-1 1.2-1.7 1.2-1.1-1.5 4.5-3.7H26v12h2.7v2.3h-8v-2.2Zm10.2-4.9c0-2.4.4-4.2 1.2-5.4.9-1.2 2-1.8 3.6-1.8 1.7 0 3 .6 3.7 1.8a10 10 0 0 1 1.2 5.4c0 2.5-.4 4.3-1.3 5.5-.8 1.2-2 1.8-3.6 1.8-1.7 0-2.9-.6-3.7-1.8-.8-1.3-1.1-3.1-1.1-5.5Zm2.6 0c0 1.7.1 3 .5 3.8.3.9 1 1.3 1.7 1.3.8 0 1.4-.4 1.8-1.2.3-.8.5-2 .5-3.9 0-1.6-.2-2.8-.5-3.7-.4-.9-1-1.3-1.8-1.3s-1.4.4-1.7 1.2c-.4.9-.5 2.1-.5 3.8Z" fill="#fff"/></svg>
           </a>
         </li>
       </ul>
@@ -234,33 +266,42 @@
       <div class="page-footer-container">
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="vk-link" href="https://vk.com/htmlacademy">
+            <a class="footer-link undecorated-icon-vk" href="https://vk.com/htmlacademy">
+              <svg width="25" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M24.12 1.8c.16-.54 0-.94-.8-.94H20.7c-.67 0-.98.34-1.15.73 0 0-1.33 3.2-3.22 5.27-.61.6-.9.8-1.23.8-.16 0-.41-.2-.41-.75v-5.1c0-.66-.19-.95-.74-.95H9.82c-.42 0-.67.3-.67.59 0 .62.95.76 1.04 2.51v3.8c0 .83-.15.98-.48.98-.9 0-3.06-3.2-4.34-6.88-.25-.72-.5-1-1.18-1H1.57c-.75 0-.9.34-.9.73 0 .68.89 4.07 4.14 8.55 2.17 3.06 5.23 4.72 8 4.72 1.68 0 1.88-.37 1.88-1v-2.32c0-.74.16-.88.7-.88.38 0 1.05.19 2.6 1.66 1.79 1.75 2.08 2.54 3.08 2.54h2.63c.75 0 1.12-.37.9-1.1-.23-.72-1.08-1.77-2.2-3.02-.62-.71-1.54-1.48-1.82-1.86-.39-.5-.28-.71 0-1.15 0 0 3.2-4.42 3.54-5.93Z" fill="#83B3D3"/>
+              </svg>
               <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="telegram-link" href="https://t.me/htmlacademy">
+            <a class="footer-link undecorated-icon-tg" href="https://t.me/htmlacademy">
+              <svg width="18" height="16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.79.96.84 7.1c-1.09.44-1.08 1.05-.2 1.32l4.1 1.28 9.47-5.98c.44-.27.85-.13.52.17l-7.68 6.93-.28 4.22c.41 0 .6-.2.83-.41l1.99-1.94 4.13 3.06c.77.42 1.31.2 1.5-.71l2.72-12.8c.28-1.1-.43-1.61-1.16-1.28Z" fill="#83B3D3"/>
+              </svg>
               <span class="visually-hidden">Телеграм</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="youtube-link" href="https://www.youtube.com/user/htmlacademyru">
+            <a class="footer-link" href="https://www.youtube.com/user/htmlacademyru">
+              <svg width="23" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.94.36H3.51C1.65.36.33 1.95.33 3.76v10.09c0 1.91 1.32 3.5 3.18 3.5h15.65c1.64 0 3.17-1.59 3.17-3.4V3.76c-.22-1.8-1.53-3.4-3.39-3.4ZM7.99 12.89V4.82l7.34 4.04-7.34 4.03Z" fill="#83B3D3"/>
+              </svg>
               <span class="visually-hidden">Ютуб</span>
             </a>
           </li>
-        <li class="footer-phone">
-          <a class="contacts-phone" href="tel:88128121212">
-            <img src="images/main/number.svg" class="number-icon" alt="Телефон">
-            <span class="visually-hidden">Телефон</span>
-          </a>
-        </li>
-        <li class="logo-HTML">
-          <a class="logo-html-link" href="https://htmlacademy.ru/">
-            <img src="images/main/html-academy-logo.svg" class="HTML-Academy-logo-icon" alt="Логотип HTML">
-          </a>
-        </li>
         </ul>
+        <div class="phone-number">
+          <a href="tel:+78128121212" class="undecorated-link phone-number">+7 (812) 812-12-12</a>
+        </div>
+        <div class="html-academy-img">
+          <a href="https://htmlacademy.ru/" class="html-academy-link">
+          <svg width="115" height="34" viewBox="0 0 115 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 13.3v2.6h2.5v-2.6H0ZM11.6 4.9c-1.6 0-2.8.7-3.6 1.7h-.1V.4h-2v15.5h2v-5.3C7.9 8.5 9.2 7 11.2 7c1.8 0 2.9 1.4 2.9 3.2v5.7h2V9.8c.1-3-1.8-5-4.5-5ZM26.6 5.2h-4.8V1.5h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1V7.2h4.8v-2ZM41.1 5c-1.6 0-2.9.8-3.5 2h-.1a3.7 3.7 0 0 0-3.4-2c-1.4 0-2.5.8-3.1 1.8h-.1V5.2H29v10.6h2v-5.4c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2V9.3c.1-2.5-1.4-4.3-3.9-4.3ZM47.8 13c0 1.8 1 2.8 2.8 2.8h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V.4h-2V13ZM28.9 20a4.9 4.9 0 0 0-3.9-1.7c-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-2h.1v1.7h2V18.6h-2V20Zm-3.6 7.5a3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6s3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6ZM44.2 22.4c-.5-2.4-2.6-4.1-5.4-4.1a5.4 5.4 0 0 0-5.6 5.6c0 3 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1a3.4 3.4 0 0 1-3.3 2.3 3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6 1.6 0 2.8 1 3.3 2.2h2.1v-.2ZM55.1 20a4.9 4.9 0 0 0-3.9-1.7c-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-2h.1v1.7h2V18.6h-2V20Zm-3.6 7.5a3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6s3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6ZM68.7 20.2a5 5 0 0 0-3.9-2c-3.1 0-5.4 2.4-5.4 5.7 0 3.3 2.2 5.6 5.4 5.6 1.7 0 3-.8 3.8-1.8h.1v1.5h2V13.8h-2v6.4Zm-3.6 7.3a3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6s3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6ZM78.3 18.3a5.4 5.4 0 0 0-5.5 5.6c0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-3h8.8c.2-3.5-2-6.2-5.5-6.2Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5a3.2 3.2 0 0 1 3.2-2.6ZM98.2 18.3a4 4 0 0 0-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 27.4l-3.6-9h-2.2l4.8 11.7c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z" fill="#000"/>
+          </svg>
+          <span class="visually-hidden">Ссылка на сайт академии</span>
+          </a>
+        </div>
       </div>
-    </footer>
+      </footer>
   </body>
 </html>
