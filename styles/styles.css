@@ -176,7 +176,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 1200px;
-  height: 485px;
+  min-height: 485px;
   margin: 0;
   padding: 0;
 }
@@ -414,7 +414,7 @@ padding-left: 85px;
 .advantages-privilege-item {
   list-style-type: none;
   width: 400px;
-  height: 384px;
+  min-height: 384px;
   padding-right: 85px;
   padding-left: 85px;
 }
@@ -507,7 +507,7 @@ padding-left: 85px;
   background-color: #ffffff;
   background-size: 1200px auto;
   background-repeat: no-repeat;
-  height: 414px;
+  min-height: 414px;
   display: flex;
   flex-direction: column;
 }
@@ -917,7 +917,7 @@ padding-left: 85px;
   border-radius: 2px;
   border: 2px solid #E5E5E5;
   width: 292px;
-  height: 49px;
+  min-height: 49px;
   margin-top: 50px;
 }
 
@@ -932,7 +932,7 @@ padding-left: 85px;
 
 .cards {
   width: 48px;
-  height: 48px;
+  min-height: 48px;
   margin-top: 50px;
   background-color: #ffffff;
   border: 2px solid #E5E5E5;
@@ -969,7 +969,7 @@ padding-left: 85px;
 
 .list {
   width: 48px;
-  height: 48px;
+  min-height: 48px;
   margin-top: 50px;
   margin-left: 8px;
   background-color: #ffffff;
@@ -988,7 +988,7 @@ padding-left: 85px;
 
 .sorting-container {
   width: 1060px;
-  height: 49px;
+  min-height: 49px;
   margin: 56px 70px 56px 70px;
   display: flex;
   flex-wrap: wrap;
